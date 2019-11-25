@@ -1,4 +1,4 @@
-package br.com.qpr;
+package br.com.qpr.resources;
 
 import br.com.qpr.entity.vo.AddressVO;
 import lombok.extern.slf4j.Slf4j;
