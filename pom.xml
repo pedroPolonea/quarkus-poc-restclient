@@ -138,6 +138,24 @@
           </systemProperties>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-pmd-plugin</artifactId>
+        <version>3.12.0</version>
+        <configuration>
+          <rulesets>
+            <ruleset>${basedir}/src/main/checkstyle/pmd.xml</ruleset>
+          </rulesets>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+              <goal>cpd-check</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
     </plugins>
   </build>
   <profiles>
